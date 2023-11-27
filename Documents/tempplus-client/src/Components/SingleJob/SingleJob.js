@@ -14,7 +14,6 @@ const SingleJob = () => {
         const { data } = await axios.get(
           `http://localhost:8080/api/jobs/${id}`
         );
-        console.log(data);
         setJobData(data);
       } catch (error) {
         console.log(error);

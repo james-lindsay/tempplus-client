@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PostJobsPage.scss";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const PostJobsPage = () => {
   const [jobTitle, setJobTitle] = useState("");
@@ -9,6 +10,7 @@ const PostJobsPage = () => {
   const [salary, setSalary] = useState("");
   const [desc, setDesc] = useState("");
   const [company, setCompany] = useState("");
+  const navigate = useNavigate();
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -32,6 +34,8 @@ const PostJobsPage = () => {
     setSalary("");
     setDesc("");
     setCompany("");
+
+    navigate("/");
   };
 
   return (

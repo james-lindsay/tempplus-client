@@ -11,9 +11,11 @@ footer {
         justify-content: space-between;
         align-items: center;
 
-        .footer-logo {
+        .footer__logo {
             font-size: 1.5rem;
             font-weight: bold;
+            margin-left: 1rem;
+            width: 4.375rem;
         }
 
           nav {
@@ -51,4 +53,10 @@ footer {
             color: white;
         }
     }
+}
+
+.footer-bottom__text{
+    color: white;
+    display: flex;
+    justify-content: center;
 }

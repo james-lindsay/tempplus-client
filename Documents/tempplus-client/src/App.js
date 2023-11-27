@@ -4,7 +4,7 @@ import Header from "./Components/Header/Header";
 import JobListingsPage from "./Pages/JobListingsPage/JobListingsPage";
 import PostJobsPage from "./Pages/PostJobsPage/PostJobsPage";
 import SingleJob from "./Components/SingleJob/SingleJob";
-import "./styles/presets.scss";
+import "./styles/_presets.scss";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 
 function App() {
